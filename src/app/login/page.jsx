@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Login() {
   return (
     <div>
-    <h2>EVENTS</h2>
+    <h2>Login Page</h2>
     
     </div>
   
