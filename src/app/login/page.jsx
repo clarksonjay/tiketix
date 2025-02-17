@@ -1,10 +1,33 @@
-import Image from "next/image";
+import style from "./login.module.css"
 
 export default function Login() {
   return (
-    <div>
-    <h2>Login Page</h2>
-    
+    <div className={style.container}>
+
+      <h1 className={style.name}>TICKETIX</h1>
+      <p className={style.welcome}>Welcome Back!</p>
+      <p className={style.loginMsg}>Use your credentials to access your account</p>
+      <br /><br />
+
+      
+        <div>
+        
+        <input type = "text" id="email" placeholder="Enter Email Address" className={style.inputBox}/>
+        <br /><br />
+
+        <input type = "text" id="pass" placeholder="Enter Password" className={style.inputBox} /><br />
+        <p className={style.forgotPassword}>Forgot Password?</p>
+        <br /><br />
+
+        <button className={style.loginBtn}>Login</button><br />
+        <hr />
+        <button className={style.loginBtn2}>Login with Facebook</button><br />
+        <button className={style.loginBtn2}>Login with Google</button><br />
+
+        <p className={style.signUp}>Don't have an account? <span>Sign Up</span></p>
+        </div>
+      
+
     </div>
   
   );
