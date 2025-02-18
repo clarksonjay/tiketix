@@ -1,4 +1,5 @@
 import style from "./login.module.css"
+import Link from "next/link";
 
 export default function Login() {
   return (
@@ -24,7 +25,7 @@ export default function Login() {
           <button className={style.loginBtn2}>Login with Facebook</button><br />
           <button className={style.loginBtn2}>Login with Google</button><br />
 
-          <p className={style.signUp}>Don't have an account? <span>Sign Up</span></p>
+          <p className={style.signUp}>Don't have an account? <span><Link href="/registration">Sign up</Link></span></p>
         </div>
       
 
